@@ -25,7 +25,7 @@ total_records = []
 for cluster in clusters:
     job_data={}
     records = []
-    folder = f"cluster_{cluster}"
+    folder = f"data/cluster_{cluster}"
     
     # Get all JSON.GZ files in the cluster folder
     files = glob.glob(os.path.join(folder, "collection_events-*.json.gz"))
